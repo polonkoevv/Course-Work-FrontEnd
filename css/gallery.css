@@ -1,28 +1,25 @@
-
-/* Галерея */
-
-.gallery__main
-
-
-.gallery__main .choice_help{
+.choice_help{
     padding: 0 0 0;
 }
-.gallery__main section{
+section{
     display: block;
 }
 
-.gallery__main .wrapper {
+.wrapper {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.gallery__main .choice_help h2 {
+.choice_help h2 {
     margin-bottom: 20px;
     color: #1a2026;
+    background:linear-gradient(45deg, rgb(247,148,109), rgb(193,85,116));
+    padding: 10px;
+    border-radius: 10px;
     font-size: 30px;
 }
 
-.gallery__main .help_title {
+.help_title {
     display: block;
     font-size: 1.5em;
     margin-block-start: 0.83em;
@@ -32,20 +29,20 @@
     font-weight: bold;
 }
 
-.gallery__main .choice_help p {
+.choice_help p {
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 40px;
 }
 
-.gallery__main .h2_desc {
+.h2_desc {
     font-size: 20px;
     font-weight: 300;
     line-height: 1.55;
     margin-bottom: 0;
 }
 
-.gallery__main p {
+p {
     color: #1a2026;
     font-size: 16px;
     line-height: 1.55;
@@ -53,7 +50,7 @@
     margin-bottom: 25px;
 }
 
-.gallery__main p {
+p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -61,7 +58,8 @@
     margin-inline-end: 0px;
 }
 
-.gallery__main .choice_grid {
+
+.choice_grid {
     display: grid;
     padding: 0 0 75px 0;
     grid-template-columns: 1fr 1fr 1fr;
@@ -74,7 +72,7 @@
         "big kids tall";
 }
 
-.gallery__main .choice_grid>a {
+.choice_grid>a {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -86,32 +84,32 @@
     color: #676bc2;
 }
 
-.gallery__main .img_none {
+.img_none {
     background: linear-gradient(rgb(246,146,109), rgb(193,85,116));
 }
 
 
-.gallery__main .adult{
+.adult{
 grid-area: adult;
 }
 
-.gallery__main .tall {
+.tall {
     grid-area: tall;
 }
 
-.gallery__main .kids {
+.kids {
     grid-area: kids;
 }
 
-.gallery__main .girls {
+.girls {
     grid-area: girls;
 }
 
-.gallery__main .tall, .kids, .girls {
+.tall, .kids, .girls {
     background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.6));
 }
 
-.gallery__main .choice_desc {
+.choice_desc {
     position: absolute;
     bottom: 0;
     text-align: left;
@@ -119,30 +117,30 @@ grid-area: adult;
     color: #fff;
 }
 
-.gallery__main .choice_desc h3 {
+.choice_desc h3 {
     font-size: 24px;
     text-align: left;
 }
 
 
 
-.gallery__main .choice_desc ul {
+.choice_desc ul {
     list-style: none;
     padding-left: 0;
     font-size: 18px;
     line-height: 1.55;
 }
 
-.gallery__main ul {
-    list-style: none;
+.choise_desc ul{
+    list-style: disc;
     padding-left: 20px;
 }
 
-.gallery__main ol,ul{
+ol,ul{
     box-sizing: border-box;
 }
 
-.gallery__main ul {
+.choise_desc ul {
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -152,35 +150,85 @@ grid-area: adult;
     padding-inline-start: 40px;
 }
 
-.gallery__main li {
+li {
     margin-bottom: 10px;
 }
 
-.gallery__main li {
+li {
     display: list-item;
     text-align: -webkit-match-parent;
 }
 
-.gallery__main .choice_grid>a img {
+.choice_grid>a img {
     position: relative;
     z-index: -1;
     width: 100%;
     height: 100%;
     transition: all 0.3s;
-    object-fit: cover;
 }   
 
-.gallery__main .help_img {
+.help_img {
     max-width: 100%;
     height: auto;
 }
 
-.gallery__main{
-    margin-top: 100px;
+
+@media (max-width: 767px)
+{
+.wrapper {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.gallery__main .choice_grid h3,
-.gallery__main .choice_grid p,
-.gallery__main .choice_grid li{
+
+h2, .catalog h2, .choice_help h2 {
+    padding-bottom: 20px;
+}
+
+
+.h2_desc {
     display: none;
+}
+
+.choice_grid {
+    max-width: 620px;
+    margin: 0 auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto 300px;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "girls big"
+        "adult kids"
+        "tall tall";
+}
+
+.choice_grid {
+    padding-top: 15px;
+}
+
+.choice_desc {
+    padding: 20px;
+}
+
+.choice_desc h3 {
+    font-size: 18px;
+    min-height: auto;
+    padding-bottom: 10px;
+}
+
+.choice__desc ul {
+    display: none;
+}
+
+.tall img {
+    height: auto !important;
+    transform: translateY(30%);
+}
+
+}
+
+.gallery__main .wrapper{
+    width: 60%;
 }
