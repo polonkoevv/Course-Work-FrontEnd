@@ -1,186 +1,130 @@
-
-/* Галерея */
-
-.gallery__main
-
-
-.gallery__main .choice_help{
-    padding: 0 0 0;
-}
-.gallery__main section{
-    display: block;
-}
-
-.gallery__main .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.gallery__main .choice_help h2 {
-    margin-bottom: 20px;
-    color: #1a2026;
-    font-size: 30px;
-}
-
-.gallery__main .help_title {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-.gallery__main .choice_help p {
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 40px;
-}
-
-.gallery__main .h2_desc {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.55;
-    margin-bottom: 0;
-}
-
-.gallery__main p {
-    color: #1a2026;
-    font-size: 16px;
-    line-height: 1.55;
-    font-weight: 700;
-    margin-bottom: 25px;
-}
-
-.gallery__main p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-.gallery__main .choice_grid {
-    display: grid;
-    padding: 0 0 75px 0;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px 20px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "girls adult tall"
-        "girls kids tall"
-        "big kids tall";
-}
-
-.gallery__main .choice_grid>a {
-    position: relative;
+.main{
+    
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    overflow: hidden;
-    border-radius: 10px;
-    text-decoration: none;
-    color: inherit;
-    color: #676bc2;
-}
-
-.gallery__main .img_none {
-    background: linear-gradient(rgb(246,146,109), rgb(193,85,116));
-}
-
-
-.gallery__main .adult{
-grid-area: adult;
-}
-
-.gallery__main .tall {
-    grid-area: tall;
-}
-
-.gallery__main .kids {
-    grid-area: kids;
-}
-
-.gallery__main .girls {
-    grid-area: girls;
-}
-
-.gallery__main .tall, .kids, .girls {
-    background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.6));
-}
-
-.gallery__main .choice_desc {
-    position: absolute;
-    bottom: 0;
-    text-align: left;
-    padding: 30px;
-    color: #fff;
-}
-
-.gallery__main .choice_desc h3 {
-    font-size: 24px;
-    text-align: left;
-}
-
-
-
-.gallery__main .choice_desc ul {
-    list-style: none;
-    padding-left: 0;
-    font-size: 18px;
-    line-height: 1.55;
-}
-
-.gallery__main ul {
-    list-style: none;
-    padding-left: 20px;
-}
-
-.gallery__main ol,ul{
-    box-sizing: border-box;
-}
-
-.gallery__main ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-.gallery__main li {
-    margin-bottom: 10px;
-}
-
-.gallery__main li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-
-.gallery__main .choice_grid>a img {
-    position: relative;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    transition: all 0.3s;
-    object-fit: cover;
-}   
-
-.gallery__main .help_img {
-    max-width: 100%;
-    height: auto;
-}
-
-.gallery__main{
+    justify-content: center;
     margin-top: 100px;
 }
 
-.gallery__main .choice_grid h3,
-.gallery__main .choice_grid p,
-.gallery__main .choice_grid li{
-    display: none;
+.gallery__wrapper{
+    padding: 20px;
+    width: 90%;
+    height: 100%;
+    /* background-color: #fff; */
+
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(5,auto);
+
+    align-items: flex-start;
+
+    grid-gap: 10px;
+    /* row-gap: 50px; */
+    
+}
+
+.gallery__wrapper .item{
+    border: hidden;
+    border-radius: 15px;
+    /* min-height: 5vh; */
+    
+    /* margin: 3px; */
+
+
+    cursor: pointer;
+    height: 100%;
+}
+
+.gallery__wrapper .img_item{
+    border: hidden;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+
+}
+
+.gallery__wrapper .item:nth-child(2){
+    grid-column: 4/6;
+    grid-row: 1/3;
+}
+
+
+.gallery__wrapper .item:nth-child(6){
+    grid-column: 1/3;
+    grid-row: 1/1;
+}
+
+.gallery__wrapper .item:nth-child(8){
+    grid-column: 3/6;
+    grid-row: 3/4;
+}
+
+.gallery__wrapper .item:nth-child(8) img{
+    height: 100%;
+}
+
+.gallery__wrapper .item:nth-child(9){
+    grid-column: 3/5;
+    overflow: hidden;
+    
+}
+
+.gallery__wrapper .item:nth-child(9) img{
+    transform: scale(1.1);
+}
+
+
+.gallery__wrapper .item:nth-child(7){
+    grid-column: 1/3;
+    grid-row: span 2;
+}
+
+.gallery__wrapper .item:nth-child(11){
+    grid-column: 1/3;
+}
+.gallery__wrapper .item:nth-child(12){
+    grid-column: 3/6;
+}
+
+@media (max-width: 767px){
+
+    .gallery__wrapper{
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(5,auto);
+        grid-gap: 5px;
+
+    }
+
+    .gallery__wrapper .item:nth-child(1){
+        grid-row: 1/3;
+        grid-column: 4/6;
+    }
+    .gallery__wrapper .item:nth-child(2){
+        grid-row: 3/5;
+        grid-column: 4/6;
+    }
+    .gallery__wrapper .item:nth-child(3){
+        grid-row: 2;
+        /* grid-column: ; */
+    }
+    .gallery__wrapper .item:nth-child(4){
+        grid-row: 2;
+        /* grid-column:; */
+    }
+    .gallery__wrapper .item:nth-child(5){
+        grid-row: 2;
+        /* grid-column:; */
+    }
+    .gallery__wrapper .item:nth-child(6){
+        grid-row: 1;
+        grid-column:1/4;
+    }
+    .gallery__wrapper .item:nth-child(7){
+        grid-column: 1/4;
+    }
+    .gallery__wrapper .item:nth-child(8){
+        grid-row: 5;
+        grid-column: 1/3;
+    }
+
 }

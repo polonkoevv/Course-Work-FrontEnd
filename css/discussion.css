@@ -1,3 +1,7 @@
+.main{
+    color: white;
+}
+
 .content{
     margin-top: 80px;
 }
@@ -17,13 +21,15 @@
     display: grid;
     justify-content: space-around;
     grid-template-columns: 0.2fr 0.7fr;
+    padding: 10px;
 }
 
 
 .form__left{
-    height: 400px;
-    background-color: gray;
+    height: 100%;
+    /* background-color: gray; */
     margin-right: 10px;
+    text-align: center;
 }
 
 .chat{
@@ -38,14 +44,14 @@
 }
 
 .chat .examp_message:last-child{
-    background-color: rgb(136, 179, 179);
+    background-color: #6C8099;
     margin-left: 50%;
 }
 
 .examp_message{
     min-height: 30px;
     max-height: 100%;
-    max-width: 50%;
+    max-width: 70%;
     min-width: 20%;
     margin-bottom: 20px;
 
@@ -54,7 +60,8 @@
 
     padding: 5px;
 
-    background-color: rgba(181, 156, 75, 0.477);
+    background-color: #A69271;
+    color: black;
 
 }
 
@@ -77,6 +84,7 @@
 .top{
     display: flex;
     justify-content: space-around;
+    /* color: white; */
 }
 
 
@@ -90,16 +98,16 @@
 
     grid-column: 2/2;
     width: 100%;
-    position: static;
+    position:static;
     right: 30px;
 }
 
 
 .message__input{
     margin-top: 20px;
-    width: 80%;
+    width: 85%;
     min-height: 30px;
-    background-color:rgba(181, 156, 75, 0.2);
+    background-color:rgba(166, 146, 113, 0.5);
 
     border: hidden;
     border-radius: 10px;
@@ -121,8 +129,19 @@
 
 .send__btn{
     height: 30px;
-    width: 60px;
+    width: 10%;
     
     border: hidden;
     border-radius: 10px;
+}
+
+
+
+
+@media (max-width:767px){
+    .chat__wrapper{
+        /* grid-template-columns: 1fr; */
+        display: flex;
+        flex-direction: column;
+    }
 }
