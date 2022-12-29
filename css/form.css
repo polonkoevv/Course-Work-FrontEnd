@@ -1,3 +1,7 @@
+main{
+	color: white;
+	margin-top: 300px;
+}
 .forms{
 	background: rgba(181, 156, 75, 0.2);
 	margin-top: 30px;
@@ -11,20 +15,22 @@
 
 }
 .form1[type="radio"]{
-	background-color: rgba(181, 156, 75, 0.2);
+	background-color:#A69271;
 
 }
 .form1 input[type="checkbox"]{
-	background-color: rgba(181, 156, 75, 0.2);
+	background-color:#A69271;
 
 }
 
 .form1 select{
-	background-color: rgba(181, 156, 75, 0.2);
+	background-color:#A69271;
+	background:none;
 	color: black;
-	border-color: bisque;
+	/* border-color: bisque; */
 	border-radius: 0;
 	border-width: 2px;
+	color: white;
 
 }
 
@@ -33,10 +39,15 @@
 }
 
 .form1 select option:checked{
-	background-color: #008080;
+
+	border: solid white 1px;
+	background:none;
+
+
+
 	margin: 1px;
 
-	color: black;
+	color: #fff;
 
 }
 .form1 .block3{
@@ -52,11 +63,22 @@
 	margin-top: 20px;
 	margin-bottom: 30px;
 	height: 30px;
-	width: 100px;
-	background-color: bisque;
-	border-style: none;
-	border-radius: 3px;
+	min-width: 100px;
+	/* background-color: bisque; */
+	color: #fff;
+	font-size: 20px;
+	background:none;
+	text-decoration: underline;
+	margin-top: 40px;
+	/* border: solid #fff 1px; */
+	padding: 5px;
 }
+
+.form1 .block3 button:hover{
+	background-color: rgba(255, 255, 255,0.2);
+	transition-duration: .5s;
+}
+
 .form1 .block1,
 .form1 .block2{
 	width: 90%;
@@ -68,6 +90,18 @@
 	
 	border-color: bisque;
 }
+
+.form1 .block2 p{
+	margin-bottom: 10px;
+}
+
+.form1 .block2 option{
+	margin-top: 4px;
+	min-width: 100px;
+	font-size: 15px;
+	padding: 0 5px;
+}
+
 .forms h2{
 	text-align: center;
 }
@@ -80,6 +114,10 @@
 	border-color: bisque;
 	
 	
+}
+
+.form1 .block1 input{
+	margin-top: 5px;
 }
 
 .form1 .block2{
@@ -97,7 +135,8 @@
 {
 	border: none;
 	border-bottom: 2px solid bisque;
-	background-color:rgba(181, 156, 75, 0.2);
+	background-color:#A69271;
+	background:none;
 	color: white;
 	transition: 0.5s;
 	height: 25px;
@@ -109,7 +148,9 @@
 {
 	border: none;
 	border-bottom: 2px solid bisque;
-	background-color:rgba(181, 156, 75, 0.2);
+	/* background-color:#A69271;
+	 */
+	 background:none;
 	color: white;
 	transition: 0.7s;
 	height: 25px;
@@ -127,21 +168,37 @@ form input:focus,textarea:focus{
 .form1 textarea{
 	width: 90%;
 	height: 100px;
-	background-color:rgba(181, 156, 75, 0.2);
+	/* background-color:#A69271; */
+	background:none;
 	border-color: bisque;
 	border-width: 2px;
 	color: white;
 	transition: 0.7s;
+	border: solid #fff 1px;
+	padding: 5px;
+	font-size: 15px;
+	margin-top: 10px;
 
 }
 .form1 textarea:focus{
 	
-	background-color: bisque;
+	/* background-color: bisque; */
 	border-width: 2px;
-	color: black;
+	background-color: rgba(255, 255, 255,0.2);
+	/* color: black; */
 
 
 }
+
+.form1 input[type="tel"],
+.form1 input[type="password"],
+.form1 input[type="text"],
+.form1 input[type="email"]{
+	font-size: 15px;
+	padding: 5px;
+	color: #fff;
+}
+
 .form1 input[type="tel"]:focus,
 .form1 input[type="password"]:focus,
 .form1 input[type="text"]:focus,
@@ -149,20 +206,23 @@ form input:focus,textarea:focus{
 {
 	border: none;
 	border-bottom: 2px solid bisque;
-	background-color:bisque;
-	color: black;
+	background-color: rgba(255, 255, 255,0.2);
+	/* background-color:#A69271; */
+	/* color: black; */
 }
-@media (max-width: 1001px) and (min-width: 770px){
+@media (max-width: 1001px) {
+
+
+	.content fieldset{
+		margin-bottom: 30px;
+	}
+
 	.form1{
 		
-		grid-template-columns: 47% 47% ;
+		display: flex;
+		flex-direction: column;
 	}
-	.content1{
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto auto;
-		grid-template-areas: "log not" "nav nav" ;
 
-	}
 	aside{
 		font-size: 23px;
 	}
@@ -172,21 +232,12 @@ form input:focus,textarea:focus{
 	.notif{
 		grid-area: notif;
 	}
-	.content{
-		
-		grid-area: nav;
-		width: 97%;
 
-	}
-	.content div{
-		margin-left: 50%;
-		width: 555px;
-		transform: translateX(-50%);
-	}
 }
 
 .content{
-    padding: 30px;
+	margin-top: 70px;
+    padding: 10px;
 }
 
 .content h2{
