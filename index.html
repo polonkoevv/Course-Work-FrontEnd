@@ -1,317 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/style.css">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    
+    <link rel="icon" href="sources/ico.png" type="image/png">.
+    <title>Movie</title>
+
+    <link rel="stylesheet" href="css/reset1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/preindex.css">
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  
-    <title>Adaptive header for site</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar__wrap">
-          <div class="hamb">
-            <div class="hamb__field" id="hamb">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-          </div>
-          <a href="#" class="logo" id="logo">asha</a>
-          <ul class="menu" id="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Benefits</a></li>
-            <li><a href="#">Prices</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="popup" id="popup"></div>
-    <header class="header">
-      <div class="container">
-        <div class="content">
-          <h1>Актеры театра и кино
-          </h1>
-        </div>
-      </div>
-    </header>
+</head>
 
+<body>
+    <video autoplay loop muted class="bgvideo" id="bgvideo">
+        <source src="./sources/video/video1.mp4" type="video/mp4"></source>
+       </video>
     <main class="main">
-      <div class="container">
-        <div class="content">
-          <div class="swipe_main">
-            <div class="swiper mySwiper_1">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Том Харди.webp">
-                    <p class="description">Том Харди</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Том Харди Острые Козырьки.jpg">
-                    <p class="description">Альфи Соломонс <br> Сериал "Острые козырьки"</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Том Харди Чарльз Бронсон.png">
-                    <p class="description">Чарльз Бронсон <br> Фильм "Бронсон"</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="to_blur" src="./sources/img/cinema/Том Харди.webp">
-                    <p class="description">Энди Гарсиа</p>
-                  </div>
+
+        <div class="container">
+            <div class="content">
+                
+                <div class="link__wrapper">
+                    <div class="link"><a href="kino.html">Театр и кино</a></div>
+                    <div class="link"><a href="gallery.html">Галерея</a></div>
+                    <div class="link"><a href="addActor.html">Добавить актера</a></div>
+                    <div class="link"><a href="discussion.html">Обсуждение</a></div>
+                    <div class="link"><a href="login.html">Авторизация</a></div>
                 </div>
-                <div class="swiper-pagination"></div>
-                
-              <div class="swiper-button-next button"></div>
-              <div class="swiper-button-prev button"></div>
-              </div>
-        
-          </div>
-          <div class="swipe_main">
-            <div class="swiper mySwiper_2">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Шайа-ЛаБаф.jpeg">
-                    <p class="description">Шайа ЛаБаф</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Шайа ЛаБаф Трансформеры.jpg">
-                    <p class="description">Роберт Дювал</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Шайя ЛаБаф Ярость.jpg">
-                    <p class="description">Том Хэнкс</p>
-                  </div>
-                  
-                  <div class="swiper-slide">
-                    <img class="to_blur" src="./sources/img/cinema/Шайа-ЛаБаф.jpeg">
-                    <p class="description">Энди Гарсиа</p>
-                  </div>
-                  </div>
-                <div class="swiper-pagination"></div>
-                
-              <div class="swiper-button-next button"></div>
-              <div class="swiper-button-prev button"></div>
-              </div>
-          </div>
 
-          <div class="swipe_main">
-            <div class="swiper mySwiper_3">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Брэд Питт.webp">
-                    <p class="description">Брэд Питт</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Брэд Питт Бойцовский Клуб.png">
-                    <p class="description">Том Хэнкс</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Брэд Питт Большой Куш.jpg">
-                    <p class="description">Шайа ЛаБаф</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="to_blur" src="./sources/img/cinema/Брэд Питт.webp">
-                    <p class="description">Энди Гарсиа</p>
-                  </div>
-                  </div>
-                <div class="swiper-pagination"></div>
+                <div class="interlayer">
+                    <span>ASHAR - актеры театра и кино.</span>
+                </div>
                 
-              <div class="swiper-button-next button"></div>
-              <div class="swiper-button-prev button"></div>
-              </div>
-          </div>
-
-          <div class="swipe_main">
-            <div class="swiper mySwiper_4">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Мэтью МакКонахи.webp">
-                    <p class="description">Мэтью МакКонахи</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Мэтью МакКонахи Джентльмены.jpg">
-                    <p class="description">Том Хэнкс</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Мэтью МакКонахи Линкольн для адвоката.jpg">
-                    <p class="description">Шайа ЛаБаф</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="to_blur" src="./sources/img/cinema/Мэтью МакКонахи.webp">
-                    <p class="description">Энди Гарсиа</p>
-                  </div>
-                  </div>
-                <div class="swiper-pagination"></div>
-                
-              <div class="swiper-button-next button"></div>
-              <div class="swiper-button-prev button"></div>
-              </div>
-          </div>
-          
-          <div class="swipe_main">
-            <div class="swiper mySwiper_5">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Аль Пачино.webp">
-                    <p class="description">Аль Пачино</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Аль Пачино Лицо со шрамомjpg.jpg">
-                    <p class="description">Том Хэнкс</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Аль Пачино Крестный Отец.jpeg">
-                    <p class="description">Шайа ЛаБаф</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="to_blur" src="./sources/img/cinema/Аль Пачино.webp">
-                    <p class="description">Энди Гарсиа</p>
-                  </div>
-                  </div>
-                <div class="swiper-pagination"></div>
-                
-              <div class="swiper-button-next button"></div>
-              <div class="swiper-button-prev button"></div>
-              </div>
-          </div>
-
-          <div class="swipe_main">
-            <div class="swiper mySwiper_6">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Тоби Магуайр.webp">
-                    <p class="description">Тоби Магуайр</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Тоби Магуайр Человек Паук.jpg">
-                    <p class="description">Том Хэнкс</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./sources/img/cinema/Тоби Магуайр Братья.jpg">
-                    <p class="description">Шайа ЛаБаф</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="to_blur" src="./sources/img/cinema/Тоби Магуайр.webp">
-                    <p class="description">Энди Гарсиа</p>
-                  </div>
-                  </div>
-                <div class="swiper-pagination"></div>
-                
-              <div class="swiper-button-next button"></div>
-              <div class="swiper-button-prev button"></div>
-              </div>
-          </div>
+            </div>
             
-
+            
         </div>
-      </div>
     </main>
 
-    <footer class="footer">
-      
-      <address>
-        <!-- <h2 id="cont_info"><a href="#head">В начало</a></h2> -->
-      <div class="footer_aboutUs">
-        <h2>О нас</h2>
-        <div class="line"></div>
-        <p>Это сайт, на котором можно узнать информацию об актерах театра и кино. Также вы можете создать заявку на добавление своего актера. Выполнил студент группы ИКБО-01-21 Властюк Артём</p>
-      <div class="footer_logo">
 
-      <div><a href="https://vk.com/artemvlastyuk"><img src="sources/logo/vk.png" height="20" width="20"></a>
-      </div>
-      <div><a href="https://instagram.com/artemvlastyuk"><img src="sources/logo/inst.png" height="20" width="20"></a></div>
+</body>
+<script src="js/script.js"></script>
 
 
-      <div><a href="https://t.me/artemvlastyuk"><img   src="sources/logo/tg1.png" height="20" width="20"></a>
-      </div>
-        </div>
-      </div>
-      </div>
-
-      <div class="nav">
-        <h2>Навигация</h2>
-        <div class="line"></div>
-        <div><a class="vhod" href="pages/login.html">Вход</a></div>
-      <div><a href="kino.html">Актеры Кино</a></div>
-      <div><a href="theatre.html">Актеры Театра</a></div>
-      <div><a href="form.html">Добавить актера</a></div>
-      <div><a href="gallery.html">Галерея</a></div>
-      </div>
-
-      <div class="Contacts" id="cont_info">
-        <h2>Контакты</h2>
-        <div class="line"></div>
-        <div class="item">          
-          <a href="mailto:cvlastyul@mail.ru">
-          <img src="sources/logo/mail.jpeg" height="12"> cvlastyuk@mail.ru</a>
-        </div>
-        <div class="item">
-          <a href="tel: +79299287868">
-            <img src="sources/logo/tel.png" height="12">+7(929)-928-78-68
-          </a>
-          </div>
-        <div class="item">
-          <a href="https://yandex.ru/maps/213/moscow/house/ulitsa_baryshikha_12/Z04YdQFgSkQEQFtvfXR1cXxrZw==/?ll=37.360313%2C55.840083&z=15" >
-          <img src="sources/logo/geo.png" height="12"> Россия г. Москва улица Барышиха д12</a>
-        </div>
-      </div>
-
-    </address>  	
-    </footer>
-  </body>
-  <script src="js/script.js"></script>
 </html>
-
-
-<!-- 
-<div class="container">
-  <div class="content">
-    <div class="about_us">
-      <h1>О нас:</h1>
-      <p>Данный сайт на тематику "Актеры театра и кино" был спроектирован и разработан студентом группы ИКБО-24-21 Полонкоевым Берсом А.</p>
-      <div class="footer_logo">
-
-        <div><a href="https://vk.com/artemvlastyuk"><img src="sources/logo/vk.png" height="20" width="20"></a>
-        </div>
-        <div><a href="https://instagram.com/artemvlastyuk"><img src="sources/logo/inst.png" height="20" width="20"></a></div>
-
-
-        <div><a href="https://t.me/artemvlastyuk"><img   src="sources/logo/tg1.png" height="20" width="20"></a>
-        </div>
-      </div>
-    </div>
-    <div class="navbar__wrap">
-      <ul class="menu" id="menu">
-        <p>Навигация:</p>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Benefits</a></li>
-        <li><a href="#">Prices</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <div class="contact">
-      <h2>Контакты</h2>
-      <div class="line"></div>
-      <a href="mailto:polonkoev.bers@gmail.com">
-      <img src="sources/logo/mail.jpeg" height="12px"> polonkoev.bers@gmail.com</a>
-      <div>
-        <a href="tel: +79258518002"> <img src="sources/logo/tel.png" height="12">+7(925)-851-80-02</a></div>
-      <div>
-        <a href="https://yandex.ru/maps/213/moscow/house/ulitsa_baryshikha_12/Z04YdQFgSkQEQFtvfXR1cXxrZw==/?ll=37.360313%2C55.840083&z=15" >
-        <img src="sources/logo/geo.png" height="12px"> Республика Ингушетия, г.Магас, ул.Д. Мальсагова д26</a>
-      </div>
-  </div>
-</div> -->
