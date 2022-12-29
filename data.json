@@ -1,0 +1,20 @@
+[
+    {
+        "name" : "Леонардо Ди Каприо",
+        "birthDate" : "11 ноября, 1974",
+        "photo" :"https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/9c33caef-be28-4257-b7ed-a407698f1a32/280x420",
+        "films" : ["Начало","Поймай меня, если сможешь","Остров проклятых"]
+    },
+    {
+        "name" : "Киллиан Мерфи",
+        "birthDate" :"25 мая, 1976",
+        "photo" :"https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/60c9b049-6177-463f-b518-40337fbeb681/280x420",
+        "films" : ["Бэтмен: Начало","Завтрак на Плутоне","Сломленные"]
+    },
+    {
+        "name" : "Дэвид Духовны",
+        "birthDate" : "7 августа, 1960",
+        "photo" : "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/68faf026-93b5-4b85-a7e7-04c9c0aec677/280x420",
+        "films" : ["Секретные материалы","То, что мы потеряли","Тайны прошлого"]
+    }
+]

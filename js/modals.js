@@ -13,6 +13,7 @@ btns.forEach((el) => {
 		});
         swiperLocked.forEach((el)=>{
             el.classList.add('swiper_locked')
+			
         });
 		document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
 		modalOverlay.classList.add('modal-overlay--visible');
@@ -31,6 +32,7 @@ modalOverlay.addEventListener('click', (e) => {
 		});
         swiperLocked.forEach((el)=>{
             el.classList.remove('swiper_locked')
+
         });
 	}
 });
